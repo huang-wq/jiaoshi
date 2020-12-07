@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #father .son p{
+            color: red;
+        }
+        #father #son p{
+            color: blue;
+        } */
+      /* .father .son p{
+         color: blue;
+          }
+        div .son p{
+            color: red;
+        } */
+         /* div .son p{
+            color: red;
+        }
+        p.a1{
+            color: blue;
+        } */
+        div .son p{
+            color: red;
+        }
+        div p.a1{
+            color: blue;
+        }
+         /* 浏览器默认优先级<间接优先级<通用优先级<直接优先级 */
+        /* 标签<类<id ,如果标签和类和Id选择器个数都相同，则就近原则：谁写在后面就用谁*/
+
+    </style>
+</head>
+<body>
+    <div class="father" id="father">
+        <div class="son" id="son">
+            <p class="a1" id="a1">测试内容</p>
+        </div>
+    </div>
+</body>
+</html>

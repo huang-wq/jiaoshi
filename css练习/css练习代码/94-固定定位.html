@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0；
+        }
+        body{
+            width: 3000px;
+            height: 2000px;
+        }
+        .father{
+            width: 400px;
+            height: 400px;
+            margin-top: 100px;
+          margin-left: 500px;
+            border: 1px solid black;
+        }
+        .box{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                position:fixed;
+                top:0;
+                left:0;
+                left:50%;
+                margin-left: -50px;
+                top: 50%;
+                margin-top: -50px;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+        span{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="box"></div>
+        <div class="box1"></div>
+        <span>测试文本</span>
+    </div>
+</body>
+</html>

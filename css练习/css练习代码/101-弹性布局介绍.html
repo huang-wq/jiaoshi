@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        padding: 0;
+        }
+        .father{
+            width: 800px;
+            height: 800px;
+            margin: 0 auto;
+            border: 2px solid black;
+            display: flex;
+            float: left;
+            clear: both;
+            /* 弹性布局中浮动和清除浮动，以及图片垂直居中不可用 */
+        }
+       .son{
+            width: 150px;
+            height: 150px;
+            border: 1px solid yellow;
+            background-color: red;
+          
+       }
+
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son">1</div>
+        <div class="son">1</div>
+        <div class="son">1</div>
+        <div class="son">1</div>
+        <div class="son">1</div>
+        <div class="son">1</div>
+        <div class="son">1</div>
+        <span class="son">2</span>
+    </div>
+</body>
+</html>

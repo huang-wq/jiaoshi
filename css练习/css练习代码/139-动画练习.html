@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;
+        padding: 0;}
+        .father{
+            width: 100px;
+            height: 100px;
+            margin: 100px auto;
+            border: 1px solid black;
+        }
+        .son{
+            width: 4px;
+            height: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #ff6700;
+            position: relative;
+            animation:donghua 2s eass 0s infinite alternate;
+        }
+        .son::after,.son::before{
+            width: 4px;
+            height: 20px;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #ff6700;
+        }
+        .son::before{
+           margin-right:10px;
+           animation:donghua 2s eass 0.8s infinite alternate;
+        }
+        .son::after{
+           margin-left: -10px;
+           animation:donghua 2s eass 0.3s infinite alternate;
+        }
+        @keyframes donghua{
+           0%{
+               transform: scale(1,0.3);
+            }
+            100%{
+                transform: scale(1,1);
+            }
+        }
+        .son:hover{
+            transform: scale(1,1);
+             transparent:
+        }
+    </style>
+</head>
+<body> 
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

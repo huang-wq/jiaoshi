@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .a1{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+           top: 50px;
+           left: 50px;
+           /* 同方向冲突按上和左 */
+           background-color: red;
+        }
+        .a2{
+          width: 200px;
+          height: 200px;
+          background-color: rosybrown;
+        }
+        span{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 300px;
+            top: 300px;
+            /* 绝对定位脱标，是行内块状元素 */
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="a1"></div>
+    <div class="a2"></div>
+    <span>1111</span>
+</body>
+</html>

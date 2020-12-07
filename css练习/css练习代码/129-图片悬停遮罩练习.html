@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            list-style: none;
+            border: 10px solid #b9acac;
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+       img{
+           width: 200px;
+           height: 200px;
+       }
+       .box{
+           width: 200px;
+           height: 200px;
+           position: absolute;
+           top: 0;
+           left: 0;
+           background-color: rgba(255,0,0, 0.8);
+           transform: rotate(90deg);
+           transform-origin: right bottom;
+           transition: all 0.3s;
+       }
+       .box h3{
+             font-size: 1.5em;
+             font-weight: 600;
+             margin: 20px 0;
+            } 
+     ul:hover div{
+        transform: rotate(0deg);
+       }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <img src="../gaoyuanyuan.jpg" alt="">
+            <div class="box">
+                <h3>高圆圆</h3>
+                <p>来自中国沈阳</p>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

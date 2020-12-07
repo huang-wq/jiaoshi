@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;
+        padding: 0;}
+        .father{
+            width: 200px;
+            height: 200px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .a1{
+            display: none;
+            /* display: block; */
+            background-color: blueviolet;
+        }
+        .a2{
+            opacity: 0;
+            /* opacity: 1; */
+            background-color: chartreuse;
+        }
+        .a3{
+            visibility: hidden;
+            /* visibility: visible; */
+            background-color: darkblue;
+        }
+        .a1.box{
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="father a1" >
+        <div class="box">1</div>
+    </div>
+    <div class="father a2" >
+        <div class="box">2</div>
+    </div>
+    <div class="father a3" >
+        <div class="box">3</div>
+    </div>
+</body>
+</html>
